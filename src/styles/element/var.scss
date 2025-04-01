@@ -1,0 +1,57 @@
+@use "element-plus/theme-chalk/src/mixins/function.scss" as *;
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+    $colors: (
+        "primary": (
+            "base": rgb(126, 115, 232)
+        ),
+        "success": (
+            "base": rgb(0, 180, 42)
+        ),
+        "warning": (
+            "base": rgb(255, 125, 0)
+        ),
+        "danger": (
+            "base": rgb(245, 63, 63)
+        ),
+        "error": (
+            "base": rgb(245, 63, 63)
+        ),
+        "info": (
+            "base": rgb(134, 144, 156)
+        )
+    ),
+    $text-color: (
+        "primary": rgb(29, 33, 41),
+        "regular": rgb(78, 89, 105),
+        "secondary": rgb(134, 144, 156),
+        "placeholder": #a8abb2,
+        "disabled": #c0c4cc
+    ),
+    $border-radius: (
+        "base": 0px,
+        "small": 0px
+    ),
+    $popover: (
+        "border-radius": 0px
+    ),
+    $popper: (
+        "border-radius": var(#{getCssVarName("popover-border-radius")}, 0px)
+    ),
+    $pagination: (
+        "border-radius": 0px
+    ),
+    $tag: (
+        "border-radius": 0px
+    ),
+    $messagebox: (
+        "border-radius": 0px
+    ),
+    $notification: (
+        "radius": 0px,
+        "icon-size": 18px
+    ),
+    $card: (
+        "border-radius": 0px
+    )
+);
+@use "element-plus/theme-chalk/src/index.scss" as *;
